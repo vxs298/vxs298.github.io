@@ -1,134 +1,182 @@
 @import url('https://fonts.googleapis.com/css?family=Anton|Signika&display=swap');
 
 body {
-  background-color: rgb(255,230,255);
+
   font-size: 16px;
   font-family: "Signika", "Anton",  "Helvetica", "Arial", sans-serif;
   color: #222;
   list-style-type: square;
-}
-
-
-
-.wrapper {
   max-width: 960px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(,2,1fr);
-  grid-auto-rows: auto;
-  grid-column-gap: 10px
+  background-image: url("../img/stairs3.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main {
+
+display: grid;
+grid-template-columns: 35% 35% 25%;
+grid-auto-rows: auto;
+grid-gap: 5px;
+}
+
+header nav a {
+  color: black;
+  padding: 0.5em;
+  background-color: #dbfcff;
+  border: 4px solid #293A80;
 }
 
 
-section p {
-  line-height: 15px;
-  font-family: "Signika";
-
+a:hover {
+  color: white;
+  font-style: bold;
+  background-color: #4D80E4;
+  border: 2px solid #110133;
 }
 
 
- h1 h2 h3 h4{
-   font-family: "Anton", sans-serif;
-   font-weight: bold;
+nav > ul {
+  padding-left: 0;
+  margin: 2em 0;
+
+}
+
+nav > ul > li {
+  display: inline-block;
+  margin-right: 1em;
+  font-weight: bold;
+}
+
+nav > ul > li > a {
+  font-weight: normal;
+}
+
+header > nav {
+  text-align: center;
 }
 
 h1{
   text-align: center;
-  font-size: 60px
+  font-size: 60px;
+  color: #110133;
 }
-
-
-
- img {
-   display: block;
-   margin-right: auto;
-   margin-left: auto;
-  border: 4px solid #222;
-  margin-bottom: 3em
+h2{
+  font-size: 30px;
+  color: #110133;
+  padding: 5px 5px 5px 5px;
+  margin:3px;
+  border-style:none;
+  background-color: rgba(255,255,255,0.5);
 }
-
-#contact {
+h3{
+  font-size: 23px;
   text-align: center;
-  grid-area:1;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-  height: 200px;
-  border: 3px dotted #222;
-  margin-bottom: 20px;
-  background-color: rgb(240,248,255);
-  padding: 10px
-
+  font-weight: bold;
+  color: #110133;
+  border-style: dotted;
+  background-color: rgba(255,255,255,0.5);
 }
 
-
-
-
-#education {
-  width: 400px;
-  height: 300px;
-  border: 3px solid #222;
-  margin-bottom: 20px;
-  border-color: black;
-  padding: 10px
-
-}
-
-#skills{
-  width: 400px;
-  height: 300px;
-  margin-bottom: 20px;
-  border: 3px solid #222;
-  margin-bottom: 20px;
-  border-color: black;
-
-
-}
-
-#expereince {
-  border: 3px solid #222;
-  width: 400px;
-  height: 600px;
-  margin-bottom: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px
-
-}
 
 h4{
+  font-size: 20px;
+  color:
+}
+
+h1 h2 h3 h4{
+  font-family: "Anton", sans-serif;
   font-weight: bold;
-  color: white;
-  background-color: black;
 }
-h3 {
-  background-color: rgb(230,242,255);
-  text-align: center;
-  border-style: dotted;
-}
-h2 {
-  color: white;
-  background-color: black;
-  text-align: center;
-  border-style: dotted;
-}
-
-a:active {
-  color: rgb(17,30,108);
-}
-
-a:hover {
-  color: rgb(150,55,45);
-  border: 2px solid #aaa;
-}
-
-a:visited {
-  color: rgb(195,5,248);
+ul li {
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 
-  ul li {
-    list-style-type: square;
-    list-style-position: inside;
+img {
+  border: 2px solid;
+  border-color: rgba(255,255,255,0.5);;
+}
 
-  }
+#bio{
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  width: 500px;
+  border-color: black;
+  padding: 10px;
+  background-color: rgba(255,255,255,0.5);
+  text-indent: 2em;
+
+}
+
+#close{
+  grid-column-start: 3;
+  border-style: none;
+
+}
+
+#stand {
+  grid-column-start: 1;
+  grid-row-start: 1;
+
+}
+
+#grad{
+
+  grid-column-start: 1;
+  grid-row: 1;
+  border-color: rgba(255,255,255,0.5);
+  border: 10px;
+
+}
+#education{
+  grid-column: 2;
+  grid-row: 1;
+  width: 300px;
+  height: 280px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border-color: white;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(255,255,255,0.5);
+  letter-spacing: normal;
+}
+#skills {
+  grid-column: 1;
+  grid-row: 2;
+  width: 580px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  padding: 10px 10px 10px 10px;
+  border-color: none;
+  background-color: rgba(255,255,255,0.5);
+  letter-spacing: normal;
+}
+#portfolio{
+  width: 600px;
+  height: 450px;
+  text-indent: 2em;
+  border: 3px solid #222;
+  margin-bottom: 30px;
+  border-color: #D6E5FA;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(255,255,255,0.5);
+  letter-spacing: normal;
+}
+
+#contact{
+  border-color: #D6E5FA;
+  padding: 10px 10px 10px 10px;
+  background-color: rgba(255,255,255,0.5);
+  font-size: 18px;
+  width:400px;
+  grid-column-start: 1;
+}
+
+
+
+body{
+  max-width: 960px
+}
